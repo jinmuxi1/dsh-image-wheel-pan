@@ -19,9 +19,29 @@ static `<img>` mode; its scripts never execute.
 ## Install
 
 This is an ordinary DSH **profile bundle**: plain ESM, no build step, no runtime
-dependencies.
+dependencies. It is published on npm as
+[`dsh-image-wheel-pan`](https://www.npmjs.com/package/dsh-image-wheel-pan) and
+can also be installed straight from GitHub.
 
-### From the DSH Plugins page
+### From npm (recommended)
+
+1. Open **Plugins** in the DSH sidebar.
+2. Choose **Add plugin**, enter the package name, and install:
+
+   ```
+   dsh-image-wheel-pan
+   ```
+
+   Or ask the Harness agent:
+
+   ```
+   plugin_manager  action: install_bundle
+                   target: dsh-image-wheel-pan
+   ```
+
+3. If the Web UI was already open, refresh the page once (`Ctrl`/`⌘` + `R`).
+
+### From GitHub
 
 1. Open **Plugins** in the DSH sidebar.
 2. Choose **Add plugin**, paste the repository address, and install:
