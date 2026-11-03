@@ -1,5 +1,8 @@
 # Image Wheel Zoom & Pan
 
+[![npm version](https://img.shields.io/npm/v/dsh-image-wheel-pan.svg)](https://www.npmjs.com/package/dsh-image-wheel-pan)
+[![license](https://img.shields.io/npm/l/dsh-image-wheel-pan.svg)](https://github.com/jinmuxi1/dsh-image-wheel-pan/blob/main/LICENSE)
+
 A DSH Web client plugin that adds direct wheel zoom and left-drag panning to
 images opened in the right sidebar.
 
