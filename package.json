@@ -1,0 +1,57 @@
+{
+  "name": "dsh-image-wheel-pan",
+  "version": "1.0.0",
+  "description": "Wheel zoom and left-drag pan for images in the DeepSeek Harness right sidebar.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinmuxi1/dsh-image-wheel-pan.git"
+  },
+  "homepage": "https://github.com/jinmuxi1/dsh-image-wheel-pan#readme",
+  "bugs": {
+    "url": "https://github.com/jinmuxi1/dsh-image-wheel-pan/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "scripts/*.mjs"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-bundle",
+    "image",
+    "zoom",
+    "pan",
+    "sidebar"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-documentpreview"
+      ]
+    }
+  }
+}
